@@ -1,0 +1,41 @@
+pam-infra-analyzer/
+├── .gitignore
+├── LICENSE
+├── pom.xml
+├── README.md
+├── docs/
+│   └── guia_pampeana.md
+└── src/
+    ├── main/
+    │   └── java/
+    │       └── ar/
+    │           └── gob/
+    │               └── lapampa/
+    │                   ├── infra/
+    │                   │   ├── model/
+    │                   │   │   ├── Host.java
+    │                   │   │   ├── Metric.java
+    │                   │   │   └── Report.java
+    │                   │   ├── collector/
+    │                   │   │   ├── LinuxCollector.java
+    │                   │   │   ├── WindowsCollector.java
+    │                   │   │   └── MockCollector.java
+    │                   │   ├── analyzer/
+    │                   │   │   ├── DiskAnalyzer.java
+    │                   │   │   ├── CpuAnalyzer.java
+    │                   │   │   └── NetworkLatencyAnalyzer.java
+    │                   │   └── reporter/
+    │                   │       ├── CsvReporter.java
+    │                   │       └── JsonReporter.java
+    │                   └── App.java
+    └── test/
+        └── java/
+            └── ar/
+                └── gob/
+                    └── lapampa/
+                        ├── infra/
+                        │   ├── collector/
+                        │   │   └── MockCollectorTest.java
+                        │   └── analyzer/
+                        │       └── CpuAnalyzerTest.java
+                        └── AppTest.java
