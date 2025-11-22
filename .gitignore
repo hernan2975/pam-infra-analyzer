@@ -1,0 +1,8 @@
+*.class
+*.log
+*.tmp
+*.bak
+target/
+logs/
+reports/
+.env
