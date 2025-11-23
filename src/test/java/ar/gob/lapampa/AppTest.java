@@ -1,0 +1,12 @@
+package ar.gob.lapampa;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+class AppTest {
+
+    @Test
+    void testMainDoesNotThrow() {
+        assertDoesNotThrow(() -> App.main(new String[]{}));
+    }
+}
